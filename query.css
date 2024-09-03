@@ -1,0 +1,86 @@
+@media screen and (min-width: 768px) {
+    header {
+        padding: 24px;
+
+    }
+    section {
+        padding: 40px 24px;
+    }
+    .hero {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .hero_image, .hero_text, .aboutme, .aboutme_text {
+        width: 100%;
+    }
+    .skill_boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .box_header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .aboutme, .project, .box_header, .testi_container {
+        flex-direction: row;
+        align-items: center;
+    }
+    .project:nth-last-child(even) {
+        flex-direction: row-reverse;
+    }
+    .testi_container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .testi_Box {
+        flex-basis: 45%;
+        flex-grow: 1;
+    }
+    .contact {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+
+}
+@media (min-width: 1024px) {
+    header, footer {
+        padding: 24px 80px;
+    }
+    section {
+        padding: 60px 80px;
+    }
+    .menu {
+        display: none;
+    }
+    nav, .resume {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+    nav a {
+        font-size: var(--Heading5-Size);
+        line-height: var(--Heading5-LH);
+        letter-spacing: var(--Heading5-Track);
+        font-weight: 500;
+        color: var(--Primary-Black);
+    }
+    nav a:hover {
+        font-weight: 600;
+    }
+    .resume {
+        font-size: var(--Button-Text-Size);
+        line-height: var(--Button-Text-LH);
+        letter-spacing: var(--Button-Text-Track);
+        font-weight: 500;
+        color: var(--Primary-White);
+        background-color: var(--Primary-Black);
+        gap: 8px;
+        padding: 16px 20px;
+        border-radius: 4px;
+    }
+    .menu_content {
+        display: none;
+    }
+}
